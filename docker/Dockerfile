@@ -7,7 +7,7 @@ MAINTAINER Ricardo Cosme <ricardo.cosme@dominode.com>
 
 ADD . /opt/driver-did-dom
 
-RUN cd /opt/driver-did-dom && mvn clean install package -N -DskipTests
+RUN cd /opt/driver-did-dom && mvn --settings settings.xml clean install package -N -DskipTests
 
 # done
 
