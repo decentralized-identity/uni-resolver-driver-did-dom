@@ -3,12 +3,6 @@
 FROM universalresolver/base-alpine
 MAINTAINER Ricardo Cosme <ricardo.cosme@dominode.com>
 
-# install dependencies
-
-ARG GITHUB_READ_PACKAGES_OWNER
-ARG GITHUB_READ_PACKAGES_TOKEN
-ADD ./settings.xml /root/.m2/
-
 # build driver-did-dom
 
 ADD . /opt/driver-did-dom
